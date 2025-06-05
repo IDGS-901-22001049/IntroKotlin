@@ -12,6 +12,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IntroKotlin"
         tools:targetApi="31">
+
+        <activity
+            android:name=".diccionario.DiccionarioActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".diccionario.GuardarPalabraActivity"
+            android:exported="true" />
+        <activity
+            android:name=".diccionario.BuscarPalabraActivity"
+            android:exported="true" />
+        <activity
+            android:name=".cinepolis.CinepolisActivity"
+            android:exported="true" />
         <activity
             android:name=".ejemplo2.ResultadoActivity"
             android:exported="false" />
@@ -20,13 +39,7 @@
             android:exported="false" />
         <activity
             android:name=".MenuActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".ejemplo1.Suma2"
             android:exported="true" />
@@ -39,5 +52,4 @@
             android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
     </application>
-
 </manifest>

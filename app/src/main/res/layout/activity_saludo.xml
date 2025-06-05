@@ -5,43 +5,42 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ejemplo2.Saludo">
+    tools:context=".ejemplo2.SaludoActivity">
 
     <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/editName"
+        android:id="@+id/edtName"
         android:layout_width="335dp"
         android:layout_height="66dp"
         android:layout_marginBottom="32dp"
-        android:hint="escribe tu nombre"
+        android:hint="Escribe tu nombre"
         android:maxLines="1"
         android:singleLine="true"
         app:layout_constraintBottom_toTopOf="@+id/btnStart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnStart"
+        android:layout_width="81dp"
+        android:layout_height="42dp"
+        android:background="@color/purple_200"
+        android:text="pulsame"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Comenzar"
-        app:layout_constraintTop_toBottomOf="@+id/editName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
-
-    <androidx.appcompat.widget.ConstraintLayout xmls:end
-    <TextView
-        android: id="@+id/textView"
-        style="d"
-        android: layout_width="wrap_content"
-        android: layout_height="wrap_content"
-        Android : text="escribe_tu_nombre"
-        android: textColor="@color/black"
-        android: textSize="35sp"
+        android:text="Escribe tu nombre"
+        android:textColor="@color/black"
+        android:textSize="35sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTop0f="Q+id/edtName"
+        app:layout_constraintBottom_toTopOf="@+id/edtName"
         app:layout_constraintEnd_toEndOf="parent"
-        app: layout_constraintStart_toStart0f="parent"
-        app: Layout_constraintTop_toTop0f="parent" />
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
